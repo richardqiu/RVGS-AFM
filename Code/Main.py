@@ -5,13 +5,19 @@ Created on Sat Sep 16 23:06:54 2017
 @author: Richard
 """
 
-import Globals
-import ReadScanParams
+#import numpy as np
+import matplotlib.pyplot as plt
 
-xPixels = 1
-yPixels = 2
+from ReadScanParams import ReadScanParams
+from ReadScanData import ReadScanData
 
-Globals.init()
-ReadScanParams.ScanParams("AFM-Scan.wsf")
+File = "AFM-Scan.wsf"
 
-print Globals.xPixels, Globals.yPixels
+params = ReadScanParams(File)
+Data =  ReadScanData(File, params.xPixels, params.yPixels)
+
+plt.figure()
+plt.imshow(Data, cmap = 'viridis')
+plt.figure()
+plt.imshow(Data, cmap = 'gray')
+
