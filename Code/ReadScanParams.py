@@ -5,12 +5,9 @@ Created on Wed Sep 20 00:33:22 2017
 """
 
 class ReadScanParams:
-    
     def __init__(self, FileName):
-        
         with open(FileName, "r") as ScanFile:
             for line in ScanFile:
-                
                 if line.find("Pixels in X:") != -1:
                     self.xPixels = int(line[12:])
                 if line.find("Lines in Y:") != -1:
@@ -57,7 +54,4 @@ class ReadScanParams:
                     self.zSensorGain = float(line[14:])            
                 if line.find("Setpoint") != -1:
                     self.Setpoint = float(line[9:])
-
                 #X, Y, Z GPID?
-
-                #print line.split()
