@@ -7,11 +7,16 @@ Created on Sat Sep 16 23:06:54 2017
 
 #import numpy as np
 import matplotlib.pyplot as plt
+import Tkinter as tk
+from tkFileDialog import askopenfilename
 
 from ReadScanParams import ReadScanParams
 from ReadScanData import ReadScanData
 
-File = "AFM-Scan.wsf"
+
+root = tk.Tk()
+File = askopenfilename( filetypes = ( ("Windows Script files", ".wsf"), ("All files", "*.*") ) )
+root.destroy()
 
 params = ReadScanParams(File)
 Data =  ReadScanData(File, params.xPixels, params.yPixels)
