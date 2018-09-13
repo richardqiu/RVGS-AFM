@@ -1,3 +1,19 @@
 # RVGS-AFM
+RVGS-AFM is a short program designed for the Roanoke Valley Governor's School's (that's the "RVGS") atomic force microscope (and that's the "AFM"). It takes reads the raw data files outputted from the AFM, and produces ISO 4287:1997 consistent measures of surface roughness. 
 
-Hi! RVGS-AFM is an open-source alternative to other... admittedly also open source AFM software... Why does this exist? I don't know either!
+# Files Needed
+.wsf files are needed as data inputs. 
+
+# To Run
+Use Python 2.7 with SciPy installed (or NumPy, matplotlib, and Tkinter) to run Main.py
+
+# Acknowledgements
+This project would have never been possible without the support of Mr. Mark Levy, director of RVGS, and Mrs. Melissa Fisher, RVGS mathematics teacher. 
+
+# Meta
+Richard Qiu (RVGS '18, Harvard '22)
+
+Distributed under the MIT license. 
+
+Richard.L.Qiu@gmail.com
+https://github.com/R-Qiu/RVGS-AFM
