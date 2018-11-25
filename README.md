@@ -13,4 +13,4 @@ This project would have never been possible without the support of Mr. Mark Levy
 ## Meta
 Richard Qiu (RVGS '18, Harvard '22) - Richard.L.Qiu@gmail.com - https://github.com/R-Qiu/RVGS-AFM
 
-Distributed under the MIT license.
+Distributed under GNU General Public License v3.0.
